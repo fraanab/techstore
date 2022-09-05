@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huawei P50 Pro</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav">
+            <a href="/index.html" class="logo">notApple</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="product">
+            <img src="/huawei p50 pro.jfif" alt="">
+        </section>
+
+        <section class="productdetails">
+            <div class="product-title">
+                <h2>Huawei P50 Pro</h2>
+                <p>Brand: Huawei</p>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+            </div>
+
+            <table class="detailsTable">
+                <tbody>
+                    <tr>
+                        <td>Price: </td>
+                        <td>$630.00</td>
+                    </tr>
+                    <tr>
+                        <td>Size: </td>
+                        <td id="sizeChosen">
+                            64GB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="memorySizes">
+                                <button class="specsChoice" id="size1">32GB</button>
+                                <button class="specsChoice" id="size2">64GB</button>
+                                <button class="specsChoice" id="size3">128GB</button>
+                                <button class="specsChoice" id="size4">256GB</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Color: </td>
+                        <td>Black</td>
+                    </tr>
+                    <tr>
+                        <td>Service Provider: </td>
+                        <td id="provider">Unlocked</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="serviceProviders">
+                                <button class="specsChoice" id="provider1">Verizon</button>
+                                <button class="specsChoice" id="provider2">Unlocked</button>
+                                <button class="specsChoice" id="provider3">AT&T</button>
+                                <button class="specsChoice" id="provider4">T-Mobile</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="p">
+                <p>
+                    The product is refurbished, fully functional, and in good condition. Backed by the 90-day Renewed
+                    Guarantee.</p>
+                    <p> - This pre-owned product has been professionally inspected, tested and cleaned, qualified
+                    vendors.</p>
+                    <p> - This product will have a battery that exceeds 80% capacity relative to new. </p>
+                    <p> - Accessories may not be original, but will be compatible and fully functional. Product may come in
+                    generic box. </p>
+                    <p> - Product will come with a SIM removal tool, a charger and a charging cable. Headphone and SIM card are
+                    not included. </p>
+                    <p> - This product is eligible for a replacement or refund within 90-day of receipt if it does not work as
+                    expected. </p>
+                    <p> - Refurbished phones are not guaranteed to maintain their waterproof seal.
+                </p>
+            </div>
+        </section>
+        
+        <section class="productCostBG">
+            <div class="productCost">
+                <h2>$630.00</h2>
+                <h3>Only · left in stock - order soon!</h3>
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </section>
+    </div>
+
+
+    <script>
+
+        var one = document.getElementById('size1');
+        var two = document.getElementById('size2');
+        var three = document.getElementById('size3');
+        var four = document.getElementById('size4');
+        var size = document.getElementById('sizeChosen');
+
+        one.onclick = function () {
+            size.innerHTML = "32GB";
+        };
+
+        two.onclick = function () {
+            size.innerHTML = "64GB";
+        };
+        three.onclick = function () {
+            size.innerHTML = "128GB";
+        };
+        four.onclick = function () {
+            size.innerHTML = "256GB";
+        };
+
+        var defaultProvider = document.getElementById('provider');
+        var provider1 = document.getElementById('provider1');
+        var provider2 = document.getElementById('provider2');
+        var provider3 = document.getElementById('provider3');
+        var provider4 = document.getElementById('provider4');
+        provider1.onclick = function () {
+            defaultProvider.innerHTML = 'Verizon';
+        };
+        provider2.onclick = function () {
+            defaultProvider.innerHTML = 'Unlocked';
+        };
+        provider3.onclick = function () {
+            defaultProvider.innerHTML = 'AT&T';
+        };
+        provider4.onclick = function () {
+            defaultProvider.innerHTML = 'T-Mobile';
+        };
+    </script>
+</body>
+
+</html>

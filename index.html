@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Phone Store</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <a href="#landing" class="logo">notApple</a>
+    
+
+                <div class="searchbar">
+                    <input type="text" placeholder="Search" id="search" name="searching-bar">
+                    <i class="fa-solid fa-search"></i>
+
+                    <ul id="itemsList">
+                        <li class="itemsList-Item"><a href="./products/iphonexr-red.html"> Iphone XR Red </a><img src="xrrojo.webp" alt=""></li>
+                        <li class="itemsList-Item"><a href="./products/iphonexr-yellow.html"> Iphone XR Yellow </a><img src="xramarillo.webp" alt=""></li>
+                        <li class="itemsList-Item"><a href="./products/iphonexr-blue.html"> Iphone XR Blue </a><img src="xrazul.webp" alt=""></li>
+                        <li class="itemsList-Item"><a href="./products/notebookhp200.html"> HP Notebook 4GB </a><img src="hp15w11.webp" alt=""></li>
+                        <li class="itemsList-Item"><a href="./products/notebookhp14.html"> HP Notebook 8GB </a><img src="hp14.webp" alt=""></li>
+                        <li class="itemsList-Item"><a href="./products/notebookhp500.html"> HP Notebook 16GB </a><img src="hp15.webp" alt=""></li>
+                        <li class="itemsList-Item"><a href="./products/huaweip50pro.html"> Huawei P50 Pro </a><img src="huawei p50 pro.jfif" alt=""></li>
+                        <li class="itemsList-Item"><a href="./products/samsungs21.html"> Samsung S21 </a><img src="samsung s21.jpg" alt=""></li>
+                        <li class="itemsList-Item"><a href="./products/samsungs22ultra.html"> Samsung S22 Ultra </a><img src="samsung s22 ultra.jpg" alt=""></li>
+                    </ul>
+                </div>
+
+
+                <i class="fa-solid fa-cart-shopping" id="carticon"></i>
+            </div>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+
+                    <!-- Cart -->
+
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Buy Now</button>
+                <div id="close-cart">X</div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="landing" id="landing">
+        <div class="landingtext">
+            <h1>The Latest Technology in the Market</h1>
+            <a href="#shop">Start Shopping!</a>
+        </div>
+        <video autoplay loop muted>
+            <source src="./production ID_4201543.mp4" type="video/mp4" >
+        </video>
+        <div class="overlay"></div>
+    </section>
+
+    <div class="divider"></div>
+
+
+    <section class="shop sec" id="shop">
+        <h2>Popular Items</h2>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+                <div class="swiper-slide card yellow">
+                    <div class="card-content">
+                        <div class="details">
+                            <p class="product-title">IPhone XR - Yellow</p>
+                            <div class="image">
+                                <img src="xramarillo.webp" alt="" class="product-img">
+                            </div>
+                            <span class="price"><h3 style="font-style:italic;">$160.00</h3></span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card blue">
+                    <div class="card-content">
+                        <div class="details">
+                            <p class="product-title">IPhone XR - Blue</p>
+                            <div class="image">
+                                <img src="xrazul.webp" alt="" class="product-img">
+                            </div>
+                            <span class="price"><h3 style="font-style:italic;">$160.00</h3></span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card red">
+                    <div class="card-content">
+                        <div class="details">
+                            <p class="product-title">IPhone XR - Red</p>
+                            <div class="image">
+                                <img src="xrrojo.webp" alt="" class="product-img">
+                            </div>
+                            <span class="price"><h3 style="font-style:italic;">$160.00</h3></span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+    <div class="divider"></div>
+
+    <section class="grid">
+        <div class="container">
+            <div class="products">
+                <div class="item item-first">
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>    
+                    <img src="xrrojo.webp" alt="" class="product-img">
+                    <h2 class="product-title">IPhone XR - Red</h2>
+                    <h3 class="price">$160.00</h3>
+                    <a href="./products/iphonexr-red.html">More</a>
+                </div>
+                <div class="item item-second">
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    <img src="xramarillo.webp" alt="" class="product-img">
+                    <h2 class="product-title">IPhone XR - Yellow</h2>
+                    <h3 class="price">$160.00</h3>
+                    <a href="./products/iphonexr-yellow.html">More</a>
+                </div>
+                <div class="item item-third">
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    <img src="xrazul.webp" alt="" class="product-img">
+                    <h2 class="product-title">IPhone XR - Blue</h2>
+                    <h3 class="price">$160.00</h3>
+                    <a href="./products/iphonexr-blue.html">More</a>
+                </div>
+            </div>
+            <div class="products">
+                <div class="item item-first">
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    <img src="huawei p50 pro.jfif" class="product-img" alt="">
+                    <h2 class="product-title">Huawei P50 PRO</h2>
+                    <h3 class="price">$630.00</h3>
+                    <a href="./products/huaweip50pro.html">More</a>
+                </div>
+                <div class="item item-second">
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    <img src="samsung s21.jpg" class="product-img" alt="">
+                    <h2 class="product-title">Samsung S21</h2>
+                    <h3 class="price">$900.00</h3>
+                    <a href="./products/samsungs21.html">More</a>
+                </div>
+                <div class="item item-third">
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    <img src="samsung s22 ultra.jpg" class="product-img" alt="">
+                    <h2 class="product-title">Samsung S22 ULTRA</h2>
+                    <h3 class="price">$799.00</h3>
+                    <a href="./products/samsungs22ultra.html">More</a>
+                </div>
+            </div>
+            <div class="products">
+                <div class="item item-first">
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    <img src="hp14.webp" class="product-img" alt="">
+                    <h2 class="product-title">HP 8GB 1TB</h2>
+                    <h3 class="price">$350.00</h3>
+                    <a href="./products/notebookhp14.html">More</a>
+                </div>
+                <div class="item item-second">
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    <img src="hp15.webp" class="product-img" alt="">
+                    <h2 class="product-title">HP 16GB 1TB</h2>
+                    <h3 class="price">$500.00</h3>
+                    <a href="./products/notebookhp500.html">More</a>
+                </div>
+                <div class="item item-third">
+                    <i class="fa-solid fa-bag-shopping add-cart"></i>
+                    <img src="hp15w11.webp" class="product-img" alt="">
+                    <h2 class="product-title">HP 4GB 120GB</h2>
+                    <h3 class="price">$200.00</h3>
+                    <a href="./products/notebookhp200.html">More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <a href="">
+            <i class="fa-brands fa-square-facebook"> Facebook</i>
+        </a>
+        <a href="">
+            <i class="fa-brands fa-instagram"> Instagram</i>
+        </a>
+        <i class="fa-solid fa-at" id="mail"> E-Mail</i>
+        <input id="emailInput" type="textarea" value="exampleofmail@notApple.com" style="position: absolute;left: -9999px;"/>
+    </section>
+
+    <footer>
+        <p>notApple - Phone Online Store</p>
+        <p>2022 Copyright Kappa</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+    if(window.screen.width < '425'){
+
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    }else{    }
+    if (window.screen.width > '425'){
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
+    }  
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

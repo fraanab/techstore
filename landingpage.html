@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            font-family: 'Courier New', sans-serif;
+        }
+        .landing{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+
+        }
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1c1c1d;
+            opacity: 0.7;
+        }
+
+        .landingtext{
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            margin: auto;
+            padding-top: 300px;
+        }
+        .landingtext h1{
+            font-size: 32px;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+            color:#fff;
+            /* text-shadow: 1px 1px 1px #fff, 1px 2px 1px #fff, 1px 3px 1px #fff, 1px 4px 1px #fff; */
+        }
+        .landingtext a{
+            color: #fff;
+            text-decoration: none;
+            margin-top: 30px;
+            padding: 15px;
+            text-shadow: -2px 1px 2px #000;
+            background: rgb(255, 128, 114);
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        .landingtext a:hover{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section class="landing" id="landing">
+        <div class="landingtext">
+            <h1>The Latest Technology in the Market</h1>
+            <a href="#">Start Shopping!</a>
+        </div>
+        <video autoplay loop muted>
+            <source src="./production ID_4201543.mp4" type="video/mp4" >
+        </video>
+        <div class="overlay"></div>
+    </section>
+
+</body>
+</html>
